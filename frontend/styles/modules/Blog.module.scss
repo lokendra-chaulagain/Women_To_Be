@@ -1,0 +1,132 @@
+.blog_wrapper {
+  .blog_section {
+    transition: all 500ms;
+    
+    .blog_card {
+      background: #fafbfb;
+      overflow: hidden;
+      box-shadow: 0px 2px 4px rgba(51, 55, 59, 0.08),0px 1px 10px rgba(51, 55, 59, 0.06);
+      border-radius: 5px;
+
+      &:hover {
+        box-shadow: 0px 2px 4px rgba(51, 55, 59, 0.08),0px 1px 10px rgba(51, 55, 59, 0.06);
+      }
+
+      .image_wrapper {
+        transition: all 500ms;
+        position: relative;
+        height: 13rem;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .card_body {
+        padding: 1.75rem;
+        // border: 0.25px solid rgb(224, 224, 224);
+      }
+
+      h4 {
+        cursor: pointer;
+        transition: all 200ms;
+
+        &:hover {
+          color: var(--purple);
+        }
+      }
+    }
+  }
+}
+
+// SINGLE BLOG
+.singleblog_wrapper {
+  margin-top: 10rem;
+
+  .blog_img {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    background-size: cover;
+  }
+
+  .blog_body {
+    padding: 1.75rem;
+    box-shadow: 0px 2px 4px rgba(51, 55, 59, 0.08),0px 1px 10px rgba(51, 55, 59, 0.06);
+
+    @media (max-width: 500px) {
+      padding: 0;
+      box-shadow: none;
+    }
+  }
+}
+
+// SIDE BAR
+.sidebar_sticky {
+
+  .input_field {
+    position: relative;
+    margin-bottom: 0.75rem;
+
+    .search_input {
+      padding: 0.75rem 2.5rem 0.75rem 1rem;
+      background: white;
+    }
+
+    .search_icon {
+      position: absolute;
+      top: 25%;
+      right: 8%;
+    }
+  }
+
+  .latest_post {
+    .post_wrapper {
+      .post_card {
+        border-bottom: 1px solid var(--purple);
+        padding: .3rem 0;
+
+        .time {
+          span {
+            font-size: 14px;
+            margin: 0;
+          }
+        }
+
+        .heading {
+          h1 {
+            cursor: pointer;
+
+            &:hover {
+              color: var(--purple);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// BLOG COMMENT SECTION
+.comment_field {
+
+  .comment_input {
+    display: grid;
+    gap: 1rem;
+    
+    @media (min-width: 500px) {
+      grid-template-columns: 1fr 8fr;
+    }
+    
+    .avatar {
+      position: relative;
+      height: 70px;
+      width: 70px;
+    }
+
+    .comment_area {
+
+      textarea {
+        width: 100%;
+      }
+    }
+  }
+}

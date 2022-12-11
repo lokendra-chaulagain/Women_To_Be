@@ -1,0 +1,65 @@
+.divider {
+  text-align: center;
+  margin: 1rem 0;
+  // background: red;
+  position: relative;
+  font-weight: 600;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 2px;
+    width: 100%;
+    background: rgb(236, 236, 236);
+    z-index: -2;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 13%;
+    background: rgb(255, 255, 255);
+    z-index: -1;
+  }
+}
+
+.btnGroup {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  .btnlbl {
+    padding: .75rem 1rem;
+    // min-width: 6rem;
+    // max-width: 8rem;
+    background: vwhite;
+    border: 1px solid var(--purple);
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--purple);
+
+    &:hover {
+
+    }
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  input:checked + label {
+    font-weight: 500;
+    color: white;
+    background: var(--purple-dark);
+  }
+}

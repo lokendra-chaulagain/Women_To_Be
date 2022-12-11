@@ -1,0 +1,24 @@
+.wrapper {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1.5fr 2fr;
+  margin: calc(2rem + 5vh) auto;
+
+  @media (max-width: 750px) {
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+  }
+
+  .heading {
+    flex-basis: 100%;
+    font-family: 'Lora';
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .para {
+    font-family: poppins;
+    line-height: calc(1rem + 2vh);
+  }
+}

@@ -1,0 +1,29 @@
+.info_wrapper {
+  display: grid;
+  margin-bottom: calc(6rem + 5vh);
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+
+  @media (max-width: 770px) {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .infoCard {
+    background-color: #501a6c;
+    color: #fff;
+
+    &:nth-last-of-type(2) {
+      background-color: #9746c0;
+    }
+
+    h4 {
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: normal;
+    }
+  }
+}

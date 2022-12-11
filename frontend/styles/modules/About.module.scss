@@ -1,0 +1,216 @@
+// ABOUT HERO SECTION
+.about_hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
+    url('https://i0.wp.com/women2be.org/wp-content/uploads/2021/07/DSC_1017-1600x850.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(10rem + 50vh);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+
+  h1 {
+    color: white;
+    font-size: 3rem;
+    font-family: Lora;
+    font-weight: 700;
+  }
+}
+
+// WELCOME SECTION IN ABOUT PAGE
+.welcome_img_wrapper {
+  height: 20rem !important;
+}
+.about_welcome {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  .about_welcome_quote {
+    color: #818181;
+    font-weight: 600;
+    font-size: 22px;
+    font-family: 'lora';
+  }
+}
+
+// VIDEO SECTION
+.about_video_section {
+  background-color: #3c1351;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%2372259A' stroke-width='100' stroke-opacity='0' %3E%3Ccircle fill='%233C1351' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%233f1455' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23421559' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%2344165c' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23471760' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%234a1864' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%234d1968' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23501a6c' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23531b70' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23561c74' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23591d78' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%235c1e7c' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%235f1f80' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%23622084' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%23652188' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%2368228d' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%236b2391' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%236E2495' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+
+  .about_video {
+    iframe {
+      height: calc(20rem + 15vh);
+      width: calc(25rem + 30vw);
+
+      @media (max-width: 600px) {
+        height: calc(18rem + 13vh);
+        width: calc(20rem + 30vw);
+      }
+
+      @media (max-width: 530px) {
+        height: 300px;
+        width: 430px;
+      }
+
+      @media (max-width: 460px) {
+        height: 240px;
+        width: 360px;
+      }
+
+      @media (max-width: 374px) {
+        height: 210px;
+        width: 300px;
+      }
+
+      @media (max-width: 300px) {
+        height: 170px;
+        width: 240px;
+      }
+    }
+  }
+}
+
+// DETAILS SECTION
+.about_details {
+  position: relative;
+  padding: 5rem 0;
+  height: calc(18rem + 15vh);
+  margin-bottom: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  @media (max-width: 900px) {
+    margin-bottom: calc(30rem + 40vh);
+  }
+
+  @media (max-width: 400px) {
+    margin-bottom: calc(30rem + 45vh);
+  }
+
+  @media (max-width: 375px) {
+    margin-bottom: calc(30rem + 50vh);
+  }
+
+  @media (max-width: 355px) {
+    margin-bottom: calc(35rem + 50vh);
+  }
+
+  @media (max-width: 328px) {
+    margin-bottom: calc(38rem + 50vh);
+  }
+
+  @media (max-width: 305px) {
+    margin-bottom: calc(40rem + 55vh);
+  }
+
+  &::before {
+    content: '';
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url('../../public/img/IMG_9666.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: calc(18rem + 15vh);
+    inset: 0 0 auto 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .details_wrapper {
+    // position: relative;
+    height: calc(8.5rem + 4vh);
+    width: 100%;
+
+    .details_card {
+      box-shadow: 0px -6px 137px -2px rgba(80, 26, 108, 0.24);
+      position: absolute;
+      inset: 18rem 0 auto;
+      margin: auto 10%;
+      background: white;
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-rows: 1fr;
+
+      @media (max-width: 900px) {
+        grid-auto-flow: row;
+      }
+
+      .detail_card {
+        background: white;
+        border-right: 1px solid var(--purple);
+        border-bottom: 1px solid var(--purple);
+        padding: 1.5rem;
+
+        // &:nth-of-type(1) {
+        //   border-right: none;
+        // }
+
+        @media (max-width: 900px) {
+          border-right: none;
+        }
+      }
+    }
+  }
+}
+
+// OUR VISION SECTION
+.vision_wrapper {
+  // display: flex;
+  display: grid;
+  // grid-auto-flow: column;
+  grid-template-columns: 1.5fr 2fr;
+
+  @media (max-width: 750px) {
+    // grid-auto-flow: row;
+    // grid-template-rows: 1fr;
+    display: block;
+  }
+
+  .vision_heading {
+    flex-basis: 100%;
+    font-family: 'Lora';
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .vision_para {
+    font-family: poppins;
+    line-height: calc(1rem + 2vh);
+  }
+}
+
+// OUR iMPACT SECTION
+.impact_wrapper {
+  .impact_titles {
+    h2 {
+      font-size: 3rem;
+    }
+
+    p {
+      color: #818181;
+      font-weight: 600;
+      font-size: 22px;
+      margin: auto;
+    }
+  }
+
+  // .thumbnail {
+  //    // width: 100%;
+  //    // height: 100%;
+  //    // background-size: cover;
+  //    // background: #818181;
+  // }
+}

@@ -1,0 +1,11 @@
+.help_wrapper {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(230px, 100%), 1fr));
+  
+  .help_card {
+    background: #fafbfb;
+    box-shadow: 0px 2px 4px rgba(51, 55, 59, 0.08),0px 1px 10px rgba(51, 55, 59, 0.06);
+    border-radius: 5px;
+  }
+}
