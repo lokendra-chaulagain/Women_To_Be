@@ -1,14 +1,14 @@
 import { useEffect, useRef } from 'react'
 import { motion as m, animate } from 'framer-motion'
 
-interface Counterprops {
-  start: number
-  end: number
-  isInView: boolean
-}
+// interface Counterprops {
+//   start: number
+//   end: number
+//   isInView: boolean
+// }
 
-export default function Counter ( { start, end, isInView }: Counterprops ) {
-  let ref = useRef<HTMLParagraphElement | null>(null)
+export default function Counter ( { start, end, isInView } ) {
+  let ref = useRef(null)
   // const controls = useAnimation()
   
   useEffect(() => {
@@ -22,5 +22,5 @@ export default function Counter ( { start, end, isInView }: Counterprops ) {
       })
     }
   })
-  return <p ref={(el :any) => (ref = el)} />
+  return <p ref={(el ) => (ref = el)} />
 }

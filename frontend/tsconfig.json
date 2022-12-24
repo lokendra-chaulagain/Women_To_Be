@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/data/infoSource.js", "src/data/ourInfoSource.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/data/infoSource.js", "src/data/ourInfoSource.js", "src/animations/counter.jsx"],
   "exclude": ["node_modules"]
 }
